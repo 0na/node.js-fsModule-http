@@ -5,18 +5,23 @@ var http = require('http');
 var server = http.createServer();
 
 server.on('request', function (request, response) {
-    response.setHeader('Content-Type', 'text/html; charset=utf-8');
+    response.setHeader('Content-Type', 'photo/jpg; charset=utf-8');
     if (request.method === 'GET' && request.url === '/') {
         fs.readFile('./index.html', 'utf-8', function (err, data) {
             response.write(data);
         });
         response.end();
     } else {
-        fs.readFile('.photo.jpg', function (err, data) {
-            response.write('.photo.jpg');
+        fs.readFile('./photo.jpg', function (err, data) {
+            response.write(data);
         })
+        //fs.readFile('./photo.jpg', function (err, data) {
+        //	response.write('<img src="./photo.jpg">');
+        //})
+
+        //readFileSync ????? co to
         response.end();
     }
 })
-server.listen(8080);
-//http://localhost:8080
+server.listen(5500);
+//http://localhost:5500
