@@ -1,3 +1,9 @@
+BŁĄD W KONSOLI : 
+
+kj:1 Unchecked runtime.lastError: The message port closed before a response was received.
+
+
+
 13.8 
 
 Zadanie: Serwujemy pliki!
