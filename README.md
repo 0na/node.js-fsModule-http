@@ -1,8 +1,3 @@
-BŁĄD W KONSOLI : 
-
-kj:1 Unchecked runtime.lastError: The message port closed before a response was received.
-
-
 
 13.8 
 
@@ -11,4 +6,3 @@ Twoim zadaniem będzie wykorzystanie modułu fs i modułu http do serwowania pli
 
 Skorzystaj z metody fs.readFile, aby odczytać plik. Pamiętaj też o odpowiednim ustawieniu nagłówków!
 
-Po wykonaniu zadania, umieść swój kod na Githubie i wyślij swojemu mentorowi link do rozwiązania.
