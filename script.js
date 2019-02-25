@@ -14,7 +14,7 @@ server
       });
     } else {
       fs.readFile("./error.jpg", function(err, img) {
-        response.writeHead(404, { "Content-Type": "image/jpg" });
+        response.writeHead("./error.jpg", { "Content-Type": "image/jpg" });
         response.write(img);
         response.end();
       });
